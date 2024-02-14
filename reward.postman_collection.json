@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "0dc201cf-09e3-4be8-b997-933f39294bc6",
+		"name": "reward",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get last three month reward for all customers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customers/lastThreeMonths",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"lastThreeMonths"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get customer by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customer/CUST307",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customer",
+						"CUST307"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get reward for id and month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/reward/CUST983/DECEMBER",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reward",
+						"CUST983",
+						"DECEMBER"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get record for given month",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/customers/DECEMBER",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"customers",
+						"DECEMBER"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "store customer record",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/save/customer/CUST160/126.00",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"save",
+						"customer",
+						"CUST160",
+						"126.00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete all customers",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delete/customers",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete customer record for given id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/delete/customer/CUST307",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete",
+						"customer",
+						"CUST307"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

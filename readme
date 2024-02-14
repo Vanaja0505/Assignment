@@ -1,0 +1,88 @@
+# Customer Reward
+
+This Spring Boot application implements a simple rewards program for customers based on their transactions. It includes RESTful endpoints for calculating reward points, retrieving customer points, and managing customer data.
+
+## Table of Contents
+
+- [Features](#features)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Features
+
+- Calculate reward points for each transaction.
+- Retrieve reward points for a specific customer and month.
+- Retrieve reward points for all customers in a specific month.
+- Retrieve reward points for the last three months for all customers.
+- Delete reward points for a specific customer and month.
+- Delete reward points for all customers in a specific month.
+
+## Getting Started
+
+### Prerequisites
+
+Make sure you have the following installed on your system:
+
+- Java 17 or later
+- Maven
+
+### Installation
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/your-username/customer-reward.git
+   cd customer-reward
+    s
+    
+    
+POST :- localhost:8080/save/customer/CUST160/126.00    
+   
+GET :- localhost:8080/reward/CUST593/DECEMBER
+GET :- localhost:8080/customer/CUST593
+GET :- localhost:8080/customers/DECEMBER
+
+
+GET :- localhost:8080/customers/lastThreeMonths
+
+response :-
+
+{
+    "CUST307": [
+        {
+            "purchaseAmount": 121.0,
+            "month": "FEBRUARY",
+            "rewardPoint": 92
+        },
+        {
+            "purchaseAmount": 120.0,
+            "month": "FEBRUARY",
+            "rewardPoint": 90
+        }
+    ]
+}
+
+
+DELETE :- localhost:8080/delete/customer/CUST593  //it will delete particular customer
+DELETE :- localhost:8080/delete/customers   //it will delete all customer
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
